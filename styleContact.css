@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+ 
+ body{
+    background: linear-gradient(0deg, #100f5e 0%, #100f5e 78%, #f917b5 30%, #f917b5 100%);
+   }
+
+ .contactUs{
+    position: relative;
+    width: 100%;
+    padding: 60px 100px;
+ }
+ .contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+ }
+ .contactUs .title h2{
+    color: #fff;
+    font-weight: 600;
+ }
+ 
+ .form{
+    grid-area: form;
+ }
+ .info{
+    grid-area: info;
+ }
+ .map{
+    grid-area: map;
+ }
+ .contact{
+    padding: 35px;
+    background: #181772;
+    border-radius: 10px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+ }
+ .box-contact{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 45px;
+ }
+ .contact h3{
+   color: #fff;
+   font-weight: 580;
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+}
+
+
+/* Form */
+.formBox{
+   position: relative;
+   width: 100%;
+}
+.formBox .row50{
+   display: flex;
+   gap: 20px;
+}
+.inputBox{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 10px;
+   width: 50%;
+}
+.formBox .row100 .inputBox{
+   width: 100%;
+}
+.inputBox span{
+   color: #ffffffb8;
+   margin-top: 10px;
+   margin-bottom: 6px;
+   font-weight: 550;
+}
+.inputBox input{
+   color: #fff;
+   padding: 10px;
+   font-size: .9rem;
+   outline: none;
+   border: 2px solid #f917b57d;
+   border-radius: 10px;
+   background-color: #100f5e;
+}
+.inputBox textarea{
+   color: #fff;
+   padding: 10px;
+   font-size: .9rem;
+   outline: none;
+   border: 2px solid #f917b57d;
+   border-radius: 10px;
+   background-color: #100f5e;
+   resize: none;
+   min-height: 220px;
+   margin-bottom: 10px;
+}
+.inputBox ::placeholder{
+   color: #c3c3c3c2;
+}
+.inputBox input[type="submit"]{
+   background-color: #f917b5;
+   color: #fff;
+   border: none;
+   border-radius: 10px;
+   font-size: .9rem;
+   max-width: 120px;
+   font-weight: 500;
+   cursor: pointer;
+   padding: 14px 15px;
+   transition: .5s;
+}
+.inputBox input[type="submit"]:hover{
+   background-color: #fff;
+   color: #f917b5;
+}
+
+
+
+/* Info */
+.info{
+   background: #181772;
+}
+.info h3{
+   color: #fff;
+   font-weight: 550;
+   font-size: 1.5rem;
+   margin-bottom: 40px;
+}
+.info .infoBox div{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+.info .infoBox div span{
+   min-width: 40px;
+   height: 40px;
+   color: #fff;
+   background-color: #f917b5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   border-radius: 50%;
+   margin-right: 15px;
+}
+.info .infoBox div p{
+   color: #ffffffd8;
+   font-size: .9rem;
+}
+.info .infoBox div a{
+   color: #ffffffd8;
+   font-size: .9rem;
+   cursor: pointer;
+   transition: 0.5s;
+   text-decoration: none;
+}
+.info .infoBox div a:hover{
+   color: #f917b5;
+}
+.sci{
+   margin-top: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+.sci a{
+   min-width: 40px;
+   height: 40px;
+   background-color: #f917b5;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   font-size: 1.2rem;
+   color: #fff;
+   transition: .5s;
+}
+.sci a:hover{
+   background-color: #fff;
+   color: #f917b5;
+}
+
+/* Map */
+map{
+   padding: 0;
+}
+.map iframe{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+}

@@ -49,6 +49,7 @@ searchBox.addEventListener("click", ()=>{
   }
 });
 
+
 // sidebar open close
 let navLinks = document.querySelector(".nav-links");
 let menuOpenBtn = document.querySelector(".navbar .bx-menu");
@@ -73,14 +74,6 @@ let jsArrow = document.querySelector(".js-arrow");
 jsArrow.onclick = function() {
  navLinks.classList.toggle("show3");
 }
-
-
-
-window.addEventListener("scroll", function(){
-   var nav = this.document.querySelector("nav")
-   nav.classList.toggle("sticky", this.window.scrollY > 0);
-})
-
 
 
 let checkboxes = document.querySelectorAll('input[type="checkbox"]');

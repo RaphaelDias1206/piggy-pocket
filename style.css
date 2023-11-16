@@ -9,20 +9,22 @@
 body{
    min-height: 100vh;
  }
+ ::selection{
+  color: #fff;
+  background-color: #f917b5;
+}
+
  nav{
-   position: fixed;
+   position: sticky;
    top: 0;
    left: 0;
    width: 100%;
    transition: 0.6s;
    z-index: 99;
-   padding: 10px 0px;
- }
- nav.sticky{
-  padding: 1px 0px;
-  background: #050264;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
- }
+   padding: 3px 0px;
+   background: #02003d;
+   box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
+  }
  nav .navbar{
    height: 100%;
    max-width: 1250px;
@@ -75,8 +77,7 @@ body{
    font-weight: 500;
    transition: color 0.3s ease;
  }
- nav .navbar .links li a:hover{
-  font-weight: bold;
+ nav .navbar .links li a:hover, nav .navbar .links li a.active{
   color: #f917b5;
 }
  .links li:hover .htmlcss-arrow,
@@ -99,7 +100,7 @@ body{
    top: 70px;
    left: 0;
    line-height: 40px;
-   background: #050264;
+   background: #02003d;
    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
    border-radius: 0 0 4px 4px;
    display: none;
@@ -385,7 +386,6 @@ section-1 button{
 }
 section-1 button:hover {
   color: #050264;
-  font-weight: 700;
   border: 1px solid #050264;
   background-color: #ffffff;
 }
@@ -404,7 +404,6 @@ section-1 .buttons input[type="button"]{
 section-1 .buttons input[type="button"]:hover{
   background: #fff;
   color: #f917b5;
-  font-weight: 700;
 }
 .custom-shape-divider-bottom-1692554482 {
   position: absolute;
@@ -564,7 +563,7 @@ main .image-section4-1{
 main .image-section4-2{
   position: absolute;
   margin-top: 35vh;
-  margin-left: 137vh;
+  margin-left: 134vh;
 }
 
 section-4 .content{
@@ -889,7 +888,8 @@ section-div2 .custom-shape-divider-top-1693176139 .shape-fill {
 
 /* Footer */
 footer{
-  background: #050264;
+  background: #040242;
+  margin-top: 4rem;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -897,7 +897,7 @@ footer{
 footer .content{
   max-width: 1250px;
   margin: auto;
-  padding: 30px 40px 40px 40px;
+  padding: 40px 40px 40px 40px;
 }
 footer .content .top{
   display: flex;
@@ -928,38 +928,38 @@ footer .content .top{
   transition: all 0.4s ease;
 }
 .top .media-icons a:nth-child(1){
-  background: #3b5998;
+  background: #f917b5;
 }
 .top .media-icons a:nth-child(1):hover{
-  color: #3b5998;
+  color: #f917b5;
   background: #fff;
 }
 .top .media-icons a:nth-child(2){
-  background: #1DA1F2;
+  background: #f917b5;
 }
 .top .media-icons a:nth-child(2):hover{
-  color: #1DA1F2;
+  color: #f917b5;
   background: #fff;
 }
 .top .media-icons a:nth-child(3){
-  background: #E1306C;
+  background: #f917b5;
 }
 .top .media-icons a:nth-child(3):hover{
-  color: #E1306C;
+  color: #f917b5;
   background: #fff;
 }
 .top .media-icons a:nth-child(4){
-  background: #111;
+  background: #f917b5;
 }
 .top .media-icons a:nth-child(4):hover{
-  color: #111;
+  color: #f917b5;
   background: #fff;
 }
 .top .media-icons a:nth-child(5){
-  background: #FF0000;
+  background: #f917b5;
 }
 .top .media-icons a:nth-child(5):hover{
-  color: #FF0000;
+  color: #f917b5;
   background: #fff;
 }
 footer .content .link-boxes{
@@ -1033,7 +1033,6 @@ footer .content .link-boxes .box{
 .input-box input[type="button"]:hover{
   background: #fff;
   color: #f917b5;
-  font-weight: 700;
 }
 footer .bottom-details{
   width: 100%;
