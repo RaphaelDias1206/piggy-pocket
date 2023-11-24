@@ -12,7 +12,7 @@
  .contactUs{
     position: relative;
     width: 100%;
-    padding: 60px 100px;
+    padding: 160px 100px 60px 100px;
  }
  .contactUs .title{
     display: flex;
@@ -134,7 +134,7 @@
    color: #fff;
    font-weight: 550;
    font-size: 1.5rem;
-   margin-bottom: 40px;
+   margin-bottom: 30px;
 }
 .info .infoBox div{
    display: flex;
@@ -168,7 +168,7 @@
    color: #f917b5;
 }
 .sci{
-   margin-top: 40px;
+   margin-top: 50px;
    display: flex;
    justify-content: center;
    align-items: center;

@@ -5,8 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Piggy Pocket</title>
+  <link rel="icon" type="image/png" href="images/logoMaior.png">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleAll.css">
   <link rel="stylesheet" href="styleContact.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -14,69 +15,42 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
 <body>
-   <!-- Nav Bar -->
-   <nav>
-      <div class="navbar">
-        <i class='bx bx-menu'></i>
-        <div class="logo">
-          <i class="fa-solid fa-piggy-bank" style="color: #f917b5;"></i>
-          <a href="index.html">Piggy Pocket</a></div>
-        <div class="nav-links">
-          <div class="sidebar-logo">
-            <i class="fa-solid fa-piggy-bank" style="color: #f917b5;"></i>
-            <span class="logo-name">Piggy Pocket</span>
-            <i class='bx bx-x' ></i>
-          </div>
-          <ul class="links">
-            <li><a href="index.html" class="active">HOME</a></li>
-            <li>
-              <a href="#">SUB-MENU</a>
-              <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
-              <ul class="htmlCss-sub-menu sub-menu">
-                <li><a href="/converter.html">Investimento</a></li>
-                <li><a href="#">Dinheiro</a></li>
-                <li><a href="#">Grana</a></li>
-                <li class="more">
-                  <span><a href="#">Mais</a>
-                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
-                </span>
-                  <ul class="more-sub-menu sub-menu">
-                    <li><a href="#">Conversão</a></li>
-                    <li><a href="#">Calculadora</a></li>
-                    <li><a href="#">Gestão</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">OUTRO SUB-MENU</a>
-              <i class='bx bxs-chevron-down js-arrow arrow '></i>
-              <ul class="js-sub-menu sub-menu">
-                <li><a href="#">Dynamic Clock</a></li>
-                <li><a href="#">Form Validation</a></li>
-                <li><a href="#">Card Slider</a></li>
-                <li><a href="#">Complete Website</a></li>
-              </ul>
-            </li>
-            <li><a href="#">SOBRE NÓS</a></li>
-            <li><a href="indexContact.html">CONTATOS</a></li>
-          </ul>
-        </div>
-        <div class="search-box">
-          <i class='bx bx-search'></i>
-          <div class="input-box">
-            <input type="text" placeholder="Pesquisar...">
-          </div>
-        </div>
+    <!-- header section -->
+    <header class="header">
+      <a href="index.html" class="logo"><img src="images/logoSite.png" alt=""></a>
+      <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="indexBlog.html">Blog</a>
+      <a href="indexCursos.html">Cursos</a>
+      <a href="indexLojinha.html">Lojinha</a>
+      <a href="indexSobre.html">Sobre Nós</a>
+      <a href="indexContact.html" >Contatos</a>
+      </nav>
+      
+      <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-search" id="search-btn"></div>
+        <div class="fa fa-shopping-cart" id="cart-btn"></div>
+        <div class="fa fa-user" id="login-btn"></div>
       </div>
-    </nav>
-   <!-- --- -->
-
+    
+      <form class="search-form">
+        <input type="search" id="search-box" placeholder="Pesquisar...">
+        <label for="search-box" class="fa fa-search"></label>
+      </form>
+    </header>
+    
+      <span class="close-btn">
+      </span>
+     <a href="#" class="to-top">
+      <i class="fas fa-chevron-up"></i>
+     </a>
+    
 
 
     <div class="contactUs">
         <div class="title">
-            <h2>Entre em contato</h2>
+            <h2>Entre em contato conosco</h2>
         </div>
         <div class="box-contact">
           <!-- Form -->
@@ -100,11 +74,11 @@
                   <div class="row50">
                     <div class="inputBox">
                       <span>Email</span>
-                      <input type="text" placeholder="piggypocket@gmail.com">
+                      <input type="text" placeholder="equipe.piggypocket@gmail.com">
                     </div>
                     <div class="inputBox">
                       <span>Telefone</span>
-                      <input type="text" placeholder="+55 11 98012-3456">
+                      <input type="text" placeholder="+55 11 12345-6789">
                     </div>
                   </div>
 
@@ -136,15 +110,10 @@
                 </div>
                 <div>
                   <span><i class="fa-solid fa-envelope"></i></span>
-                  <a href="mailto:piggypocket@gmail.com">piggypocket@gmail.com</a>
-                </div>
-                <div>
-                  <span><i class="fa-solid fa-phone"></i></span>
-                  <a href="tel:+5511980123456">+55 11 98012-3456</a>
+                  <a href="mailto:piggypocket@gmail.com">equipe.piggypocket@gmail.com</a>
                 </div>
 
                 <ul class="sci">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fab fa-twitter"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
                   <a href="#"><i class="fa-brands fa-tiktok"></i>
@@ -173,46 +142,45 @@
     <div class="content">
       <div class="top">
         <div class="logo-details">
-          <i class="fa-solid fa-piggy-bank" style="color: #f917b5;"></i>
-          <span class="logo_name"><strong>Piggy Pocket</strong></span>
+          <img src="images/logoSite.png" alt="">
         </div>
         <div class="media-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="indexContact.html"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://twitter.com/piggy_pocket"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-tiktok"></i>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@piggy.pocket"><i class="fa-brands fa-tiktok"></i>
+          <a href="https://www.youtube.com/channel/UCWLfCDwdceKqga20zehQzMA"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
       <div class="line-bg"></div>
       <div class="link-boxes">
         <ul class="box">
-          <li class="link_name">Companhia</li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contatos</a></li>
-          <li><a href="#">Sobre nós</a></li>
-          <li><a href="#">Comece agora</a></li>
-        </ul>
-        <ul class="box">
-          <li class="link_name">Serviços</li>
-          <li><a href="#">Dicas</a></li>
-          <li><a href="#">Invista</a></li>
-          <li><a href="#">Conversão</a></li>
-          <li><a href="#">Calculadora</a></li>
-        </ul>
-        <ul class="box">
-          <li class="link_name">Conta</li>
-          <li><a href="#">Perfil</a></li>
-          <li><a href="#">Minha conta</a></li>
-          <li><a href="#">Preferências</a></li>
-          <li><a href="#">Compras</a></li>
+          <li class="link_name">Blog</li>
+          <li><a href="#">Economia</a></li>
+          <li><a href="#">Investimento</a></li>
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#">Mais</a></li>
         </ul>
         <ul class="box">
           <li class="link_name">Cursos</li>
-          <li><a href="#">Investimento</a></li>
-          <li><a href="#">Economia</a></li>
-          <li><a href="#">Trabalho</a></li>
-          <li><a href="#">Dinheiro</a></li>
+          <li><a href="#">Dicas</a></li>
+          <li><a href="#">Invista</a></li>
+          <li><a href="#">Conversão</a></li>
+          <li><a href="#">Mais</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Lojinha</li>
+          <li><a href="#">Acessórios</a></li>
+          <li><a href="#">Decoração</a></li>
+          <li><a href="#">Roupas</a></li>
+          <li><a href="#">Mais</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Outros</li>
+          <li><a href="#">Comunidade</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Contatos</a></li>
         </ul>
         <ul class="box input-box">
           <li class="link_name">Inscreva-se</li>
@@ -230,8 +198,10 @@
         </span>
       </div>
     </div>
-  </footer>
+  </footer> 
   <!-- --- -->
+
+
 
   <!-- JQuery Link -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" 

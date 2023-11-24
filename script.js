@@ -1,5 +1,5 @@
 const dynamicText = document.querySelector("h2 span");
-const words = ["Economia", "Investimento", "Educação", "Acessibilidade", "Inovação"];
+const words = ["Economia", "Investimento", "Educação", "Diversão", "Inovação"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -27,53 +27,21 @@ const typeEffect = () => {
 typeEffect();
 
 
-
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-   hamburger.classList.remove("active");
-   navMenu.classList.remove("active");
-}))
-
-
-
-// search-box open close
-let navbar = document.querySelector(".navbar");
-let searchBox = document.querySelector(".search-box .bx-search");
-// let searchBoxCancel = document.querySelector(".search-box .bx-x");
-
-searchBox.addEventListener("click", ()=>{
-  navbar.classList.toggle("showInput");
-  if(navbar.classList.contains("showInput")){
-    searchBox.classList.replace("bx-search" ,"bx-x");
-  }else {
-    searchBox.classList.replace("bx-x" ,"bx-search");
-  }
+const closeBtn = document.querySelector(".close-btn");
+closeBtn.addEventListener("click", () =>{
+  closeBtn.classList.toggle("open");
 });
 
+const toTop = document.querySelector(".to-top");
 
-// sidebar open close
-let navLinks = document.querySelector(".nav-links");
-let menuOpenBtn = document.querySelector(".navbar .bx-menu");
-let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-menuOpenBtn.onclick = function() {
-navLinks.style.left = "0";
-}
-menuCloseBtn.onclick = function() {
-navLinks.style.left = "-100%";
-}
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})
 
-// sidebar submenu open close
-let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-htmlcssArrow.onclick = function() {
- navLinks.classList.toggle("show1");
-}
-let moreArrow = document.querySelector(".more-arrow");
-moreArrow.onclick = function() {
- navLinks.classList.toggle("show2");
-}
-let jsArrow = document.querySelector(".js-arrow");
-jsArrow.onclick = function() {
- navLinks.classList.toggle("show3");
-}
 
 
 let checkboxes = document.querySelectorAll('input[type="checkbox"]');

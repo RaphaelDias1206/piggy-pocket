@@ -23,7 +23,7 @@ body{
 
 .header-inner-content{
   background-color: #050264;
-  padding-top: 5rem;
+  padding-top: 6rem;
   padding-bottom: 3rem;
 }
 .header-bottom-side{
@@ -89,7 +89,7 @@ a:hover{
 li{
   list-style: none;
 }
-.post-box img{
+.curso-box img{
   width: 100%;
 }
 section{
@@ -103,8 +103,8 @@ section{
 
 
 
-/* Post Filter */
-.post-filter{
+/* curso Filter */
+.curso-filter{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,24 +133,24 @@ section{
 }
 
 
-/* Posts */
-.post{
+/* cursos */
+.curso{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,100px));
   justify-content: center;
   gap: 1.5rem;
 }
-.post-box{
+.curso-box{
   background: var(--bg-color);
   box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
   padding: 15px;
   border-radius: 0.5rem;
   transition: 0.5s all;
 }
-.post-box:hover{
+.curso-box:hover{
   transform: translateY(-2px);
 }
-.post-img{
+.curso-img{
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -178,7 +178,7 @@ section{
   background-color: #fff;
   color: var(--second-color);
 }
-.post-title{
+.curso-title{
   font-size: 1.3rem;
   line-height: 1.7rem;
   font-weight: 580;
@@ -189,7 +189,7 @@ section{
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.post-date{
+.curso-date{
   color: #F917B5;
   display: flex;
   font-size: 0.875rem;
@@ -197,25 +197,27 @@ section{
   font-weight: 400;
   margin-top: 4px;
 }
-.post-description{
+.curso-description{
   color: #fff;
   font-size: 0.8rem;
   line-height: 1.5rem;
-  margin: 15px 0 20px;
+  margin: 10px 0 20px;
   /* To Remain Title In 3 Lines */
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.profile{
+.profile-curso{
+  padding-top: 25px;
+  padding-bottom 20px;
   height: 35px;
   width: 35px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.profile-img{
+.profile-curso-img{
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -223,121 +225,41 @@ section{
   object-position: center;
   border: 3px solid var(--second-color);
 }
-.profile-img img{
+.profile-curso-img img{
   width: 100%;
 }
-.profile-name{
+.profile-curso-name{
   line-height: 1.1rem;
   color: #fff;
   font-size: 0.82rem;
   font-weight: 500;
 }
-
-
-/* Post Content */
-.post-header{
+.ver-curso{
+  justify-content: center;
   background-color: #F917B5;
-  width: 100%;
-  height: 400px;
-}
-.post-container{
-  max-width: 1065px;
-  margin: auto;
-  width: 100%;
-}
-.header-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 8rem !important;
-}
-.back-home{
-  margin-top: -2.2rem;
-  color: #050264;
-  font-weight: 550;
-  font-size: 0.9rem;
-}
-.back-home:hover{
-  color: #fff;
-  font-weight: 550;
-  text-decoration: underline;
-}
-.header-title{
-  width: 100%;
-  line-height: 2.6rem;
-  font-size: 2.6rem;
-  color: #fff;
-  text-align: center;
-  padding: .8rem;
-}
-.header-img{
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 2rem;
-}
-.published{
-  font-style: italic;
-  text-decoration: none;
-  color: #ffffff69;
-  margin-bottom: 1rem;
-}
-.post-content{
-  color: #fff;
-  margin-top: 22rem !important;
-}
-.sub-heading{
-  color: #F917B5;
-  margin-top: 2rem;
-  font-size: 1.8rem;
-}
-.post-text{
-  font-size: 1rem;
-  line-height: 1.7rem;
-  margin: 1rem 0;
-  text-align: justify;
-}
-.list .list-content{
-  padding-bottom: .5rem;
-}
-.list .list-content span{
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #F917B5;
-}
-
-
-/* Read More */
-.read-more h3{
-  margin-top: 4rem;
-  color: #fff;
-  font-size: 1.5rem;
-  margin-bottom: .5rem;
-}
-hr.readMore-line {
-  border: 2px solid #F917B5;
-  border-radius: 5px;
-}
-.related{
-  gap: 2.2rem;
-  margin-top: -4rem;
-  margin-bottom: 4rem;
-}
-.other-articles{
-  margin-top: -7rem;
-  text-align: right;
-}
-.back-home2{
-  background-color: #F917B5;
-  padding: 10px;
+  max-width: fit-content;
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
   border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   color: #fff;
-  font-weight: 550;
-  font-size: 0.9rem;
-  transition: .5s;
+  transition: 0.5s all;
+  cursor: pointer;
 }
-.back-home2:hover{
+.ver-curso:hover{
   background-color: #fff;
-  color: #F917B5;
+  color: var(--second-color);
+}
+.ver-curso i{
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+}
+.ver-curso p{
+  font-size: 18px;
+  padding-right: 10px;
 }
